@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таблиця страв </title>
+    <style>
+     /* Загальні стилі для таблиці*/
+      table {
+        width: 80%
+        margin 20px auto
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        text-align: left;}
+      th,td{
+        border: 1px solid#ddd;
+        padding: 10px;}
+      th{
+        background-color: #f4f4f4;
+        font-weight:bold;
+        text-align: center;}
+
+      /* Зміна фону залежить від груп*/
+      .first-course {background-color:#d9f9d9;}
+      .main-course {background-color:#ffe5e5;}
+      .ethnic {background-color:#fef3c7;}
+
+       /* Стилі для чергування рядків*/
+      tbody tr:nth-child(odd){background-color:#f9f9f9;}
+      tbody tr:hover {background-color:#f1f1f1;}
+
+        /* Спадкові стилі*/
+      .highlight
+      {font-weight:bold;
+       color:#2a7b9b;}
+   </style>
+  </head>
+  <body>
+    <h1 style= "text-align: center;"> Таблиця страв</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Група</th>
+          <th>Назва страви</th>
+          <th>Тип кухні</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <!--Перша група: Перше-->
+        <tr class="first-course"
+          <td>Перше</td>
+          <td>Борщ</td>
+          <td>Українська</td>
+        </tr>
+         <tr class="first-course"
+          <td>Перше</td>
+          <td>Раман</td>
+          <td>Японська</td>
+        </tr>
+    
+           <!--Друга група: Друге-->
+        <tr class="main-course"
+          <td>Друге</td>
+          <td>Плов</td>
+          <td>Узбекська</td>
+        </tr>
+        <tr class="main-course"
+          <td>Друге</td>
+          <td>Біфштекс</td>
+          <td>Англійська</td>
+        </tr>                                     
+
+        <!--Третя група: Етнічність-->
+        <tr class="ethnic"
+          <td>Етнічність</td>
+          <td>Тако</td>
+          <td>Мексиканська</td>
+        </tr>
+       <tr class="ethnic"
+          <td>Етнічність</td>
+          <td>Кебаб</td>
+          <td>Турецька</td>
+        </tr>                         
+
+       <!--Інші страви-->
+        <tr class="first-course"
+          <td>Перше</td>
+          <td>Крем-суп із грибів</td>
+          <td>Французька</td>
+        </tr>
+      <tr class="main-course"
+          <td>Друге</td>
+          <td>Рататуй</td>
+          <td>Французька</td>
+        </tr>       
+       <tr class="ethnic"
+          <td>Етнічність</td>
+          <td>Суши</td>
+          <td>Японська</td>
+        </tr>                   
+       <tr class="main-course"
+          <td>Друге</td>
+          <td>Салат Цезарь</td>
+          <td>Американська</td>
+        </tr>
+    </tbody>
+  </table>
+  </body>
+</html>
